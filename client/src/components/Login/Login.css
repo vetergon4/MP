@@ -1,0 +1,7 @@
+.login-background {
+  /*background image login_background*/
+  background-image: url("./background.png");  /* Set background size, position, and other styles as needed */
+  background-size: cover;
+  background-position: center;
+  /* Add any other styles you want for the background */
+}

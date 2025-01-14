@@ -1,0 +1,21 @@
+   //components
+import PageContainer from "../Layout/PageContainer/PageContainer";
+import PageContent from "../Layout/PageContent/PageContent";
+import Nav from "../Layout/Nav/Nav";
+import Footer from "../Layout/Footer/Footer";
+
+
+   <PageContainer isFixedNav>
+      <Nav />
+      <PageContent
+         title="Make reservation"
+         primaryAction={{
+            content: "Scan QR code",
+            onClick: () => {
+               alert("ok");
+            }
+         }}
+      >
+      </PageContent>
+      <Footer />
+   </PageContainer>

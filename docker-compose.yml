@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  server:
+    build:
+      context: ./server
+    ports:
+      - "3000:3000"  # Expose port 3000 for the server
+    # Add any additional configuration for your server container
+
+  client:
+    build:
+      context: ./client
+    # No need to specify ports here since we'll access the client via Nginx
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "8080:80"  # Expose port 80 for Nginx
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - client
+    # Add any additional configuration for your Nginx container

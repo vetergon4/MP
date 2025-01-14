@@ -1,0 +1,7 @@
+.background {
+  /*from dark blue to light blue gradient for background */
+  background: rgb(174, 217, 238);
+  background: radial-gradient(circle, rgb(72, 148, 185) 50%, #005780 100%);
+  background-size: cover;
+  background-position: center;
+}

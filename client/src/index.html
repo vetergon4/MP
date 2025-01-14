@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MarinePRO</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- React and ReactDOM from CDN -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+<!-- React Router from CDN (use the latest version) -->
+<script src="https://unpkg.com/react-router-dom/umd/react-router-dom.development.js"></script>
+
+  <script type="module">
+    import React from 'https://unpkg.com/react@17/umd/react.development.js';
+    import ReactDOM from 'https://unpkg.com/react-dom@17/umd/react-dom.development.js';
+    import { BrowserRouter as Router } from 'https://unpkg.com/react-router-dom@6/umd/react-router-dom.development.js';
+    import App from './App.js'; // Adjust the path accordingly
+
+    const rootElement = document.getElementById('root');
+    ReactDOM.createRoot(rootElement).render(
+      <Router>
+        <App />
+      </Router>
+    );
+  </script>
+</body>
+</html>
